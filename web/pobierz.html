@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gasnący Płomień — zagraj lub pobierz</title>
+<meta name="theme-color" content="#140606">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --gold:#e6c56a; --text:#e8dcc0; --muted:#a89c84; --card:rgba(12,8,7,.82); --line:rgba(200,170,110,.35); }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; color:var(--text); font:18px/1.55 'EB Garamond',Georgia,serif;
+         background:radial-gradient(ellipse at 50% 18%,#7a2a14 0%,#3a0c0a 38%,#120606 70%,#070303 100%); }
+  main { max-width:760px; margin:0 auto; padding:48px 20px 64px; }
+  .sun { width:96px; height:96px; margin:0 auto 18px; border-radius:50%; background:#0a0706;
+         box-shadow:0 0 0 2px #ffd28a, 0 0 60px 18px rgba(255,140,60,.45); }
+  h1 { font-family:Cinzel,Georgia,serif; font-weight:700; text-align:center; font-size:clamp(30px,7vw,52px); margin:0; letter-spacing:.04em; }
+  .sub { text-align:center; color:var(--muted); margin:6px 0 34px; }
+  .lang { text-align:center; margin-bottom:26px; }
+  .lang button { font:inherit; color:var(--muted); background:none; border:1px solid var(--line); padding:4px 14px; cursor:pointer; }
+  .lang button.on { color:var(--gold); border-color:var(--gold); }
+  .grid { display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
+  .card { background:var(--card); border:1px solid var(--line); padding:22px 20px; display:flex; flex-direction:column; gap:10px; }
+  .card h2 { font-family:Cinzel,Georgia,serif; font-size:19px; margin:0; color:var(--gold); }
+  .card p { margin:0; color:var(--muted); font-size:16px; flex:1; }
+  .btn { display:block; text-align:center; text-decoration:none; font-family:Cinzel,Georgia,serif; font-weight:700;
+         color:#1a0a06; background:linear-gradient(#f0d27a,#c9a24a); padding:12px 14px; border:0; }
+  .btn:hover { filter:brightness(1.08); }
+  ol { margin:6px 0 0; padding-left:20px; color:var(--muted); font-size:16px; }
+  footer { margin-top:34px; text-align:center; color:#7a705e; font-size:15px; }
+  footer a { color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <div class="sun" aria-hidden="true"></div>
+  <h1>GASNĄCY PŁOMIEŃ</h1>
+  <p class="sub" data-pl="Soulslike 2D · sześć krain · sześciu bossów" data-en="2D soulslike · six lands · six bosses">Soulslike 2D · sześć krain · sześciu bossów</p>
+  <div class="lang"><button id="pl" class="on">Polski</button> <button id="en">English</button></div>
+
+  <div class="grid">
+    <section class="card">
+      <h2 data-pl="Zagraj w przeglądarce" data-en="Play in your browser">Zagraj w przeglądarce</h2>
+      <p data-pl="Komputer, telefon lub tablet. Bez instalacji. Na telefonie pojawią się przyciski dotykowe." data-en="Computer, phone or tablet. Nothing to install. Touch buttons appear on phones.">Komputer, telefon lub tablet. Bez instalacji. Na telefonie pojawią się przyciski dotykowe.</p>
+      <a class="btn" href="./" data-pl="Graj teraz" data-en="Play now">Graj teraz</a>
+    </section>
+
+    <section class="card">
+      <h2 data-pl="Android — aplikacja" data-en="Android — app">Android — aplikacja</h2>
+      <p data-pl="Pobierz plik APK i otwórz go na telefonie. Przy pierwszej instalacji zezwól na instalowanie z tego źródła." data-en="Download the APK and open it on your phone. On first install, allow installing from this source.">Pobierz plik APK i otwórz go na telefonie. Przy pierwszej instalacji zezwól na instalowanie z tego źródła.</p>
+      <a class="btn" href="https://github.com/jakubandroid31-create/gasnacy-plomien/releases/latest/download/gasnacy-plomien.apk" data-pl="Pobierz APK" data-en="Download APK">Pobierz APK</a>
+    </section>
+
+    <section class="card">
+      <h2 data-pl="iPhone / iPad" data-en="iPhone / iPad">iPhone / iPad</h2>
+      <p data-pl="Gra działa jak aplikacja po dodaniu do ekranu głównego:" data-en="The game works like an app once added to your home screen:">Gra działa jak aplikacja po dodaniu do ekranu głównego:</p>
+      <ol>
+        <li data-pl="Otwórz grę w Safari." data-en="Open the game in Safari.">Otwórz grę w Safari.</li>
+        <li data-pl="Stuknij „Udostępnij”." data-en="Tap “Share”.">Stuknij „Udostępnij”.</li>
+        <li data-pl="Wybierz „Do ekranu początkowego”." data-en="Choose “Add to Home Screen”.">Wybierz „Do ekranu początkowego”.</li>
+      </ol>
+      <a class="btn" href="./" data-pl="Otwórz grę" data-en="Open the game">Otwórz grę</a>
+    </section>
+  </div>
+
+  <footer>
+    <span data-pl="Kod źródłowy:" data-en="Source code:">Kod źródłowy:</span>
+    <a href="https://github.com/jakubandroid31-create/gasnacy-plomien">github.com/jakubandroid31-create/gasnacy-plomien</a>
+  </footer>
+</main>
+<script>
+  function setLang(l) {
+    document.documentElement.lang = l;
+    document.querySelectorAll('[data-' + l + ']').forEach(el => { el.textContent = el.getAttribute('data-' + l); });
+    document.getElementById('pl').classList.toggle('on', l === 'pl');
+    document.getElementById('en').classList.toggle('on', l === 'en');
+  }
+  document.getElementById('pl').onclick = () => setLang('pl');
+  document.getElementById('en').onclick = () => setLang('en');
+  if (!(navigator.language || 'pl').toLowerCase().startsWith('pl')) setLang('en');
+</script>
+</body>
+</html>

@@ -2,6 +2,13 @@
 
 Gra 2D w stylu soulslike, z widokiem z boku jak w Castlevanii, w mrocznej, sakralnej stylistyce pixel-art. Ma sześć krain, sześciu bossów, ogniska i dusze. Muzyka jest generowana na żywo w przeglądarce (metal z chórem przy bossach i gotycki ambient w krainach). Gra działa po polsku i po angielsku.
 
+## Linki dla graczy (bez logowania)
+- **Wszystko w jednym miejscu (do wysłania mailem):** https://jakubandroid31-create.github.io/gasnacy-plomien/pobierz.html
+- **Graj w przeglądarce:** https://jakubandroid31-create.github.io/gasnacy-plomien/
+- **APK na Androida:** https://github.com/jakubandroid31-create/gasnacy-plomien/releases/latest/download/gasnacy-plomien.apk
+
+Nowe wydanie APK publikujesz, tworząc tag, np. `git tag v0.3.0 && git push --tags`.
+
 ## Wersje
 
 | Wersja | Gdzie | Jak |
