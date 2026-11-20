@@ -1,0 +1,15 @@
+{
+  "name": "Gasnący Płomień",
+  "short_name": "Płomień",
+  "description": "Soulslike 2D w widoku jak w Castlevanii – sześć krain, bossowie, muzyka.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#0e0706",
+  "theme_color": "#140606",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "gasnacy-plomien",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Soulslike 2D w widoku jak w Castlevanii – wersja www i aplikacja na Androida (Capacitor).",
+  "scripts": {
+    "android:init": "cap add android && npm run android:patch",
+    "android:patch": "capacitor-assets generate --android || true && node scripts/patch-android.js",
+    "android:sync": "cap sync android",
+    "android:open": "cap open android",
+    "android:apk": "cap sync android && cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/core": "^6.1.2"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^6.1.2"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "appId": "pl.gasnacyplomien.gra",
+  "appName": "Gasnący Płomień",
+  "webDir": "web",
+  "backgroundColor": "#0e0706",
+  "android": {
+    "allowMixedContent": false
+  }
+}
