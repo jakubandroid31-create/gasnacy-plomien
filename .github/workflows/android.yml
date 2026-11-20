@@ -52,8 +52,15 @@ jobs:
           name: gasnacy-plomien-apk
           path: gasnacy-plomien.apk
 
-      - name: Wydanie (przy tagu v*)
-        if: startsWith(github.ref, 'refs/tags/v')
+      - name: Publiczne wydanie z APK (do pobrania bez logowania)
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || 'najnowsza' }}
+          name: ${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || 'Najnowsza wersja' }}
+          target_commitish: ${{ github.sha }}
+          make_latest: true
+          body: |
+            Gasnący Płomień – aplikacja na Androida.
+            Pobierz plik gasnacy-plomien.apk, otwórz go na telefonie i zezwól na instalację z tego źródła.
+            Gra w przeglądarce: https://jakubandroid31-create.github.io/gasnacy-plomien/
           files: gasnacy-plomien.apk
