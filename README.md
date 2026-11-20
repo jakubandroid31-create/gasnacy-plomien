@@ -11,8 +11,8 @@ Gra 2D w stylu soulslike, z widokiem z boku jak w Castlevanii, w mrocznej, sakra
 | **telefon – „aplikacja” z przeglądarki** | GitHub Pages | Otwórz stronę na telefonie → menu przeglądarki → **Dodaj do ekranu głównego**. Działa też na iPhonie i offline. |
 
 ### GitHub Pages (granie w przeglądarce pod stałym adresem)
-1. **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-2. Każdy push do `main` publikuje grę pod adresem `https://<twoj-login>.github.io/<nazwa-repo>/`.
+Gra jest pod adresem **https://jakubandroid31-create.github.io/gasnacy-plomien/**.
+Każda zmiana w folderze `web/` na gałęzi `main` sama trafia na gałąź `gh-pages`, a stamtąd na stronę. Nic nie trzeba klikać.
 
 ### APK na Androida
 - Każdy push do `main` buduje plik APK. Pobierzesz go w **Actions** jako artefakt, który jest dostępny przez 90 dni.
